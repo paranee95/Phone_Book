@@ -3,18 +3,9 @@ const PhoneBook = require('../mongodb/Model/phoneBook');
 
 const router = express.Router();
 
-router.get('/:id', async (req, res) => {
+router.get('/', async (req, res) => {
   try {
-    const { id } = req.params;
-
-    const phoneNumber = await PhoneBook.findById(id);
-
-    if (!phoneNumber) {
-      return res.status(404).json({
-        status: 'Failed',
-        message: 'Phone book entry not found',
-      });
-    }
+    const phoneNumber = await PhoneBook.find();
 
     res.status(200).json({
       status: 'Success',

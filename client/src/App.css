@@ -5,13 +5,15 @@
   align-items: center;
   background-color: #a4dfd9;
   padding: 20px;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 .heading {
   font-size: 36px;
   margin-bottom: 20px;
   font-weight: bold;
-  color: #270202;
+  color: #0e0c7f;
   text-align: center;
 }
 
@@ -23,9 +25,9 @@
   border: 1px solid #eb0a1d;
   margin-bottom: 15px;
   padding: 8px;
-  color: #333333; 
+  color: #333333;
+  font-size: 14px;
 }
-
 
 .buttonContainer {
   display: flex;
@@ -35,8 +37,8 @@
 
 .button {
   margin-right: 10px;
-  background-color: #1a237e;
-  color: #012a07;
+  background-color: #0e0c7f;
+  color: #f6b4b4;
   border: none;
   border-radius: 5px;
   height: 40px;
@@ -46,6 +48,8 @@
   font-weight: bold;
   padding: 0 16px;
   transition: background-color 0.3s ease;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 .button:last-child {
@@ -53,22 +57,73 @@
 }
 
 .button:hover {
+  background-color: #ff536a;
+}
+
+.update-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0e0c7f;
+  text-align: center;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 10px;
+  margin-top: 20px;
+  width: 50%;
+}
+
+li {
+  background-color: #f6b4b4;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entry-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.entry-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #270202;
+  
+}
+
+.entry-phone {
+  font-size: 14px;
+  color: #333333;
+}
+
+.entry-actions {
+  display: flex;
+  align-items: center;
+}
+
+.update-btnn{
+  background-color:#0e0c7f;
+  color: #f6b4b4;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 0 10px;
+  margin-left: 10px;
   cursor: pointer;
-  background-color: #e859d0;
 }
 
-body {
-  background-color: #a4dfd9;
-  margin: 0;
-  padding: 0;
-}
-
-.button {
-  background-color: #93b4f7;
-}
-
-.button:hover {
+.update-btn:hover {
   background-color: #9d6f94;
 }
-
-
